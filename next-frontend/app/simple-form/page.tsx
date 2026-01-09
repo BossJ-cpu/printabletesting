@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 type Submission = {
     id: number;
@@ -154,6 +155,15 @@ export default function SimpleForm() {
                             Generate
                         </button>
                     </div>
+                </div>
+
+                <div className="pt-6">
+                    <Link
+                        href="/pdf-editor"
+                        className="block w-full rounded bg-gray-800 px-4 py-2 text-center font-bold text-white hover:bg-gray-900"
+                    >
+                        Insert PDF Coordinates
+                    </Link>
                 </div>
             </div>
         </div>
