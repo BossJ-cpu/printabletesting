@@ -27,3 +27,7 @@ Thumbs.db
 
 # Local/Personal documents
 next-frontend/public/Arive-Internship-Plan-SIGNED_signed.pdf
+
+# Accidental nested folder (contains personal docs)
+/my_first_app/
+my_first_app/next-frontend/public/Arive-Internship-Plan-SIGNED_signed.pdf
