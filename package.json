@@ -7,9 +7,11 @@
         "dev": "vite",
         "dev:laravel": "php artisan serve --host 127.0.0.1 --port 8000",
         "dev:react": "vite --host 127.0.0.1 --port 5173",
-        "dev:full": "concurrently --kill-others-on-fail -n laravel,react,check -c blue,green,magenta \"npm:dev:laravel\" \"npm:dev:react\" \"node scripts/check-stack.js\""
+        "dev:next": "npm run dev --prefix next-frontend",
+        "dev:full": "concurrently \"npm:dev:laravel\" \"npm:dev:react\" \"npm:dev:next\" \"node scripts/check-stack.js\""
     },
     "dependencies": {
+        "pdf-lib": "^1.17.1",
         "react": "^18.3.1",
         "react-dom": "^18.3.1"
     },

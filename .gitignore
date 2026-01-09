@@ -13,6 +13,8 @@
 /.zed
 /auth.json
 /node_modules
+**/node_modules
+**/.next
 /public/build
 /public/hot
 /public/storage
@@ -22,3 +24,6 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+# Local/Personal documents
+next-frontend/public/Arive-Internship-Plan-SIGNED_signed.pdf

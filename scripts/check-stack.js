@@ -1,6 +1,7 @@
 const targets = [
   { name: 'Laravel', url: 'http://127.0.0.1:8000/api/health' },
-  { name: 'React', url: 'http://127.0.0.1:5173/@vite/client' },
+  { name: 'React', url: 'http://127.0.0.1:5173/' },
+  { name: 'Next.js', url: 'http://127.0.0.1:3000/' },
 ];
 
 const timeoutMs = 60_000;
@@ -26,7 +27,7 @@ async function waitForAll() {
     const results = await Promise.all(targets.map((t) => ping(t.url)));
     const allUp = results.every(Boolean);
     if (allUp) {
-      console.log('React + Laravel = Success');
+      console.log('React + Laravel + Next.js = Success');
       // Keep process alive to prevent concurrently -k from killing others
       console.log('Stack check passed. Keeping monitor alive...');
       setInterval(() => {}, 60000);
